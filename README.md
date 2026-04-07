@@ -103,11 +103,6 @@ Este proyecto representa una simulación real del trabajo de un técnico en sist
 
 Ha permitido comprender cómo se conectan los distintos módulos del ciclo formativo y cómo se aplican en un entorno profesional.
 
-## Autor
-
-Proyecto realizado por Cristian
-Estudiante de Sistemas Microinformáticos y Redes (SMR)
-
 ## 🏗️ Estructura del repositorio
 
 ```mermaid
@@ -125,3 +120,9 @@ graph TD
     E --> K[Word + Excel + PowerPoint]
     F --> L[Diagrama E/R]
     G --> M[Perfil profesional]
+
+```
+## Autor
+
+Proyecto realizado por Cristian
+Estudiante de Sistemas Microinformáticos y Redes (SMR)
