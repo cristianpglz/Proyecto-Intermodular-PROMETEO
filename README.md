@@ -19,7 +19,7 @@ graph TD
     A --> G[Itinerario para la Empleabilidad 1709]
 
     B --> H[Red segmentada VLANs + IoT + Packet Tracer]
-    C --> I[Windows 11 Pro + configuración]
+    C --> I[Windows 11 + configuración]
     D --> J[Hardware + montaje detallado]
     E --> K[Word + Excel + PowerPoint]
     F --> L[Diagrama E/R]
