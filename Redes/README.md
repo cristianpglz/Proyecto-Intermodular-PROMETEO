@@ -46,7 +46,7 @@ La simulación se ha realizado con Cisco Packet Tracer. Los componentes clave so
 ## 4. Plan de Direccionamiento IP (/24)
 La red se ha segmentado en tres VLANs lógicas para aislar el tráfico y aplicar políticas de seguridad.
 
-| VLAN | Nombre | Subred (Red: 192.10.x.0) | Gateway (Router) | Propósito de la Red |
+| VLAN | Nombre | Subred (Red: 192.168.x.0) | Gateway (Router) | Propósito de la Red |
 | :--- | :--- | :--- | :--- | :--- |
 | **10** | GESTIÓN | 192.168.10.0 /24 | 192.168.10.1 | PCs Administrativos y Tornos de acceso. |
 | **20** | IOT | 192.168.20.0 /24 | 192.168.20.1 | Domótica (Webcams, Sensores, Altavoces, Ventiladores). |
