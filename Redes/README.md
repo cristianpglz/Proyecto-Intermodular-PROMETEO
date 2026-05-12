@@ -22,15 +22,15 @@ Se ha optado por una topología física en estrella segmentada lógicamente para
 #### Mapa Visual de la Infraestructura
 **GENERAL:**
 
-<img width="2324" height="1020" alt="image" src="https://github.com/user-attachments/assets/8eb57aec-5b24-476d-ab47-f229a23478ac" />
+<img width="914" height="352" alt="image" src="https://github.com/user-attachments/assets/39551406-2b15-4736-b119-333f9a375d20" />
 
 **SWITCH:**
 
-<img width="814" height="177" alt="image" src="https://github.com/user-attachments/assets/5430b32f-f49c-445a-8c05-dc1ce3fe779a" />
+<img width="701" height="426" alt="image" src="https://github.com/user-attachments/assets/664b5c72-3ad6-4dd8-94e1-aa48cb7b6c6c" />
 
 **ROUTER:**
 
-<img width="683" height="417" alt="image" src="https://github.com/user-attachments/assets/50606e02-895c-4233-b4a0-55e7775a3fc8" />
+<img width="1037" height="224" alt="image" src="https://github.com/user-attachments/assets/3f72431a-fa1e-4ff8-b31b-a5ff3250f8b0" />
 
 ---
 
@@ -48,9 +48,9 @@ La red se ha segmentado en tres VLANs lógicas para aislar el tráfico y aplicar
 
 | VLAN | Nombre | Subred (Red: 192.10.x.0) | Gateway (Router) | Propósito de la Red |
 | :--- | :--- | :--- | :--- | :--- |
-| **10** | GESTIÓN | 192.10.10.0 /24 | 192.10.10.1 | PCs Administrativos y Tornos de acceso. |
-| **20** | IOT | 192.10.20.0 /24 | 192.10.20.1 | Domótica (Webcams, Sensores, Altavoces, Ventiladores). |
-| **30** | CLIENTES | 192.10.30.0 /24 | 192.10.30.1 | WiFi público para Smartphones y Tablets. |
+| **10** | GESTIÓN | 192.168.10.0 /24 | 192.168.10.1 | PCs Administrativos y Tornos de acceso. |
+| **20** | IOT | 192.168.20.0 /24 | 192.168.20.1 | Domótica (Webcams, Sensores, Altavoces, Ventiladores). |
+| **30** | CLIENTES | 192.168.30.0 /24 | 192.168.30.1 | WiFi público para Smartphones y Tablets. |
 
 ---
 
@@ -68,13 +68,14 @@ Para garantizar la integridad y el cumplimiento de normativas de seguridad, se h
 ### Flujo 1: Conectividad Interna (Gestión a IoT)
 Prueba exitosa que demuestra que los servicios privados (ej: PC de recepción) pueden monitorizar los equipos domóticos (ej: una Webcam). El primer paquete puede fallar por resolución ARP, obteniendo éxito total en los siguientes.
 
-<img width="891" height="688" alt="image" src="https://github.com/user-attachments/assets/14eea0ef-4143-4489-9ce4-648e3fd4ee02" />
+<img width="493" height="306" alt="image" src="https://github.com/user-attachments/assets/309e930a-730b-47ba-af94-0950760a3cc2" />
+
 
 ---
 
 ### Flujo 2: Bloqueo de Seguridad (Clientes a Red Privada)
 Demostración del aislamiento de seguridad mediante ACL. Un Smartphone intenta conectarse a la red de administración y el Router bloquea el tráfico devolviendo "Destination host unreachable".
 
-<img width="886" height="688" alt="image" src="https://github.com/user-attachments/assets/e2461671-9877-469f-bac3-b80610b6b0e8" />
+<img width="437" height="531" alt="image" src="https://github.com/user-attachments/assets/0ff60b58-582d-47d1-a6d8-299d401b7e65" />
 
 ---
